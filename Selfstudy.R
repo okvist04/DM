@@ -7,8 +7,8 @@ set.seed(1)
 #Randomly take 13 observations out of the 27 total observations
 train <- sample(27, 17)
 
-model <- lm(TotalDeaths ~ . -TotalCases, data = data, subset = train)
-mean((data$TotalDeaths - predict(model, data))[-train]^2)
+model <- lm(TotalDeaths ~ . -TotalCases, data = data1, subset = train)
+mean((data1$TotalDeaths - predict(model, data1))[-train]^2)
 
 
 
