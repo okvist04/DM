@@ -13,8 +13,3 @@ mean((data1$TotalDeaths - predict(model, data1))[-train]^2)
 
 
 
-
-
-
-
-
